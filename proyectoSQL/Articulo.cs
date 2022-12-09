@@ -23,8 +23,8 @@ namespace proyectoSQL
             string nombre = txtNombre.Text;
             string descripcion = txtDescripcio.Text;
             string fecha = txtFecha.Text;
-            string idUsuario = txtFecha.Text;
-            string idEditorial = txtFecha.Text;
+            string idUsuario = txtidUsuario.Text;
+            string idEditorial = txtidEditorial.Text;
             consulta = "INSERT INTO Articulo (nombreArticulo,descripcion,año,idUsuario,idEditorial) values ('" + nombre + "','" + descripcion + "','" + fecha + "','" + idUsuario + "','" + idEditorial + "')";
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);

@@ -75,8 +75,8 @@ namespace proyectoSQL
 
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            int idActividad = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
-            consulta = "UPDATE Actividad SET ESTATUS = 0 WHERE idActividad =" + idActividad.ToString();
+            int idArchivero = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
+            consulta = "UPDATE Archivero SET ESTATUS = 0 WHERE idArchivero =" + idArchivero.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
