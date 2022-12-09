@@ -50,6 +50,7 @@ namespace proyectoSQL
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            string BD = "";
             string nombre = txtNombre.Text;
             string fecha = txtFecha.Text;
             string idEmpelado = txtidEmpleado.Text;
