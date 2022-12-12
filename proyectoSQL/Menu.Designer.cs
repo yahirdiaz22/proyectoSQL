@@ -472,12 +472,15 @@
             // 
             // btnUsuarioPrestamo
             // 
+            this.btnUsuarioPrestamo.BackColor = System.Drawing.Color.White;
+            this.btnUsuarioPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarioPrestamo.ForeColor = System.Drawing.Color.Black;
             this.btnUsuarioPrestamo.Location = new System.Drawing.Point(1486, 800);
             this.btnUsuarioPrestamo.Name = "btnUsuarioPrestamo";
             this.btnUsuarioPrestamo.Size = new System.Drawing.Size(168, 92);
             this.btnUsuarioPrestamo.TabIndex = 52;
             this.btnUsuarioPrestamo.Text = "Usuario Prestamo";
-            this.btnUsuarioPrestamo.UseVisualStyleBackColor = true;
+            this.btnUsuarioPrestamo.UseVisualStyleBackColor = false;
             this.btnUsuarioPrestamo.Click += new System.EventHandler(this.btnUsuarioPrestamo_Click);
             // 
             // btnUsuario
@@ -494,12 +497,15 @@
             // 
             // btnRevista
             // 
+            this.btnRevista.BackColor = System.Drawing.Color.White;
+            this.btnRevista.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRevista.ForeColor = System.Drawing.Color.Black;
             this.btnRevista.Location = new System.Drawing.Point(1290, 799);
             this.btnRevista.Name = "btnRevista";
             this.btnRevista.Size = new System.Drawing.Size(168, 92);
             this.btnRevista.TabIndex = 50;
             this.btnRevista.Text = "Revista";
-            this.btnRevista.UseVisualStyleBackColor = true;
+            this.btnRevista.UseVisualStyleBackColor = false;
             this.btnRevista.Click += new System.EventHandler(this.btnRevista_Click);
             // 
             // btnRegistroVista
@@ -612,12 +618,15 @@
             // 
             // btnColeccionLibro
             // 
+            this.btnColeccionLibro.BackColor = System.Drawing.Color.White;
+            this.btnColeccionLibro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColeccionLibro.ForeColor = System.Drawing.Color.Black;
             this.btnColeccionLibro.Location = new System.Drawing.Point(241, 800);
             this.btnColeccionLibro.Name = "btnColeccionLibro";
             this.btnColeccionLibro.Size = new System.Drawing.Size(168, 92);
             this.btnColeccionLibro.TabIndex = 40;
             this.btnColeccionLibro.Text = "Coleccion Libro";
-            this.btnColeccionLibro.UseVisualStyleBackColor = true;
+            this.btnColeccionLibro.UseVisualStyleBackColor = false;
             this.btnColeccionLibro.Click += new System.EventHandler(this.btnColeccionLibro_Click);
             // 
             // btnClasificacion
@@ -658,52 +667,67 @@
             // 
             // btnPeriodo
             // 
+            this.btnPeriodo.BackColor = System.Drawing.Color.White;
+            this.btnPeriodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPeriodo.ForeColor = System.Drawing.Color.Black;
             this.btnPeriodo.Location = new System.Drawing.Point(1080, 799);
             this.btnPeriodo.Name = "btnPeriodo";
             this.btnPeriodo.Size = new System.Drawing.Size(168, 92);
             this.btnPeriodo.TabIndex = 60;
             this.btnPeriodo.Text = "Periodico";
-            this.btnPeriodo.UseVisualStyleBackColor = true;
+            this.btnPeriodo.UseVisualStyleBackColor = false;
             this.btnPeriodo.Click += new System.EventHandler(this.btnPeriodo_Click);
             // 
             // btnImprenta
             // 
+            this.btnImprenta.BackColor = System.Drawing.Color.White;
+            this.btnImprenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprenta.ForeColor = System.Drawing.Color.Black;
             this.btnImprenta.Location = new System.Drawing.Point(869, 799);
             this.btnImprenta.Name = "btnImprenta";
             this.btnImprenta.Size = new System.Drawing.Size(168, 92);
             this.btnImprenta.TabIndex = 59;
             this.btnImprenta.Text = "Imprenta";
-            this.btnImprenta.UseVisualStyleBackColor = true;
+            this.btnImprenta.UseVisualStyleBackColor = false;
             this.btnImprenta.Click += new System.EventHandler(this.btnImprenta_Click);
             // 
             // btnEquipoComputo
             // 
+            this.btnEquipoComputo.BackColor = System.Drawing.Color.White;
+            this.btnEquipoComputo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquipoComputo.ForeColor = System.Drawing.Color.Black;
             this.btnEquipoComputo.Location = new System.Drawing.Point(673, 799);
             this.btnEquipoComputo.Name = "btnEquipoComputo";
             this.btnEquipoComputo.Size = new System.Drawing.Size(168, 92);
             this.btnEquipoComputo.TabIndex = 58;
             this.btnEquipoComputo.Text = "Equipo Copmuto";
-            this.btnEquipoComputo.UseVisualStyleBackColor = true;
+            this.btnEquipoComputo.UseVisualStyleBackColor = false;
             this.btnEquipoComputo.Click += new System.EventHandler(this.btnEquipoComputo_Click);
             // 
             // btnDocumento
             // 
+            this.btnDocumento.BackColor = System.Drawing.Color.White;
+            this.btnDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDocumento.ForeColor = System.Drawing.Color.Black;
             this.btnDocumento.Location = new System.Drawing.Point(459, 800);
             this.btnDocumento.Name = "btnDocumento";
             this.btnDocumento.Size = new System.Drawing.Size(168, 92);
             this.btnDocumento.TabIndex = 57;
             this.btnDocumento.Text = "Documento";
-            this.btnDocumento.UseVisualStyleBackColor = true;
+            this.btnDocumento.UseVisualStyleBackColor = false;
             this.btnDocumento.Click += new System.EventHandler(this.btnDocumento_Click);
             // 
             // btnComite
             // 
+            this.btnComite.BackColor = System.Drawing.Color.White;
+            this.btnComite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComite.ForeColor = System.Drawing.Color.Black;
             this.btnComite.Location = new System.Drawing.Point(31, 800);
             this.btnComite.Name = "btnComite";
             this.btnComite.Size = new System.Drawing.Size(168, 92);
             this.btnComite.TabIndex = 56;
             this.btnComite.Text = "Comite";
-            this.btnComite.UseVisualStyleBackColor = true;
+            this.btnComite.UseVisualStyleBackColor = false;
             this.btnComite.Click += new System.EventHandler(this.btnComite_Click);
             // 
             // btnArticulo
