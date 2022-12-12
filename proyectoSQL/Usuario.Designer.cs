@@ -32,8 +32,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtColonia = new System.Windows.Forms.TextBox();
             this.txtCalle = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
@@ -68,7 +66,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(31, 323);
+            this.label13.Location = new System.Drawing.Point(31, 263);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(161, 16);
             this.label13.TabIndex = 135;
@@ -76,7 +74,7 @@
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(288, 323);
+            this.txtNumero.Location = new System.Drawing.Point(288, 257);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(175, 22);
             this.txtNumero.TabIndex = 134;
@@ -89,22 +87,6 @@
             this.label14.Size = new System.Drawing.Size(111, 16);
             this.label14.TabIndex = 133;
             this.label14.Text = "ingrese el estado";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 263);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 16);
-            this.label9.TabIndex = 132;
-            this.label9.Text = "ingrese la colonia";
-            // 
-            // txtColonia
-            // 
-            this.txtColonia.Location = new System.Drawing.Point(288, 260);
-            this.txtColonia.Name = "txtColonia";
-            this.txtColonia.Size = new System.Drawing.Size(175, 22);
-            this.txtColonia.TabIndex = 130;
             // 
             // txtCalle
             // 
@@ -275,8 +257,6 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtColonia);
             this.Controls.Add(this.txtCalle);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.txtEstado);
@@ -311,8 +291,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtColonia;
         private System.Windows.Forms.TextBox txtCalle;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtEstado;

@@ -50,7 +50,7 @@ namespace proyectoSQL
             string genero = txtGenero.Text;
             string descripcion = txtDescripcion.Text;
             string libro = txtIDLibro.Text; ;
-            consulta = consulta = "UPDATE Genero SET genero = '" + genero + "', '" + descripcion + "','" + libro + "' WHERE idGenero = " + idGenero.ToString();
+            consulta = consulta = "UPDATE Genero SET genero = '" + genero + "', descripcion ='" + descripcion + "',idLibro = '" + libro + "' WHERE idGenero = " + idGenero.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

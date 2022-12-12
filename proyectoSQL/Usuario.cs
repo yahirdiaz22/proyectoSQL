@@ -32,14 +32,13 @@ namespace proyectoSQL
             string aPaterno = txtApaterno.Text;
             string aMaterno = txtAmaterno.Text;
             string calle = txtCalle.Text;
-            string colonia = txtColonia.Text;
             string numero = txtNumero.Text;
             string cuidad = txtCuidadd.Text;
             string estado = txtEstado.Text;
             string pais = txtPais.Text;
             string telefono = txtTelefono.Text;
             consulta = "INSERT INTO Usuario (nombre,apellidoPaterno,apellidoMaterno,calle,colonia,numeroExterior,cuidad,estado,pais,telefono) " +
-                "values('" + nombre + "', '" + aPaterno + "','" + aMaterno + "','" + calle + "','" + colonia + "','" + numero + "','" + cuidad + "','" + estado + "','" + pais + "','" + telefono + "')";
+                "values('" + nombre + "', '" + aPaterno + "','" + aMaterno + "','" + calle + "','" + numero + "','" + cuidad + "','" + estado + "','" + pais + "','" + telefono + "')";
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
@@ -49,7 +48,6 @@ namespace proyectoSQL
             txtApaterno.Clear();
             txtAmaterno.Clear();
             txtCalle.Clear();
-            txtColonia.Clear();
             txtNumero.Clear();
             txtCuidadd.Clear();
             txtEstado.Clear();
@@ -64,13 +62,12 @@ namespace proyectoSQL
             string aPaterno = txtApaterno.Text;
             string aMaterno = txtAmaterno.Text;
             string calle = txtCalle.Text;
-            string colonia = txtColonia.Text;
             string numero = txtNumero.Text;
             string cuidad = txtCuidadd.Text;
             string estado = txtEstado.Text;
             string pais = txtPais.Text;
             string telefono = txtTelefono.Text;
-            consulta = consulta = "UPDATE Proveedor SET nombre = '" + nombre + "', '" + aPaterno + "','" + aMaterno + "','" + calle + "','" + colonia + "','" + numero + "','" + cuidad + "','" + estado + "','" + pais + "','" + telefono + "' WHERE idUsuario = " + idUsuario.ToString();
+            consulta = consulta = "UPDATE Usuario SET nombre = '" + nombre + "', apellidoPaterno = '" + aPaterno + "',apellidoMaterno = '" + aMaterno + "',calle = '" + calle + "',numeroExterior = '" + numero + "',cuidad = '" + cuidad + "',estado = '" + estado + "',pais = '" + pais + "',telefono = '" + telefono + "' WHERE idUsuario = " + idUsuario.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
@@ -80,7 +77,6 @@ namespace proyectoSQL
             txtApaterno.Clear();
             txtAmaterno.Clear();
             txtCalle.Clear();
-            txtColonia.Clear();
             txtNumero.Clear();
             txtCuidadd.Clear();
             txtEstado.Clear();
@@ -95,13 +91,12 @@ namespace proyectoSQL
             string aPaterno = txtApaterno.Text;
             string aMaterno = txtAmaterno.Text;
             string calle = txtCalle.Text;
-            string colonia = txtColonia.Text;
             string numero = txtNumero.Text;
             string cuidad = txtCuidadd.Text;
             string estado = txtEstado.Text;
             string pais = txtPais.Text;
             string telefono = txtTelefono.Text;
-            consulta = consulta = "UPDATE Usuario SET nombre = '" + nombre + "', '" + aPaterno + "','" + aMaterno + "','" + calle + "','" + colonia + "','" + numero + "','" + cuidad + "','" + estado + "','" + pais + "','" + telefono + "' WHERE idUsuario = " + idUsuario.ToString();
+            consulta = consulta = "UPDATE Usuario SET nombre = '" + nombre + "', '" + aPaterno + "','" + aMaterno + "','" + calle + "','" + numero + "','" + cuidad + "','" + estado + "','" + pais + "','" + telefono + "' WHERE idUsuario = " + idUsuario.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
@@ -111,7 +106,6 @@ namespace proyectoSQL
             txtApaterno.Clear();
             txtAmaterno.Clear();
             txtCalle.Clear();
-            txtColonia.Clear();
             txtNumero.Clear();
             txtCuidadd.Clear();
             txtEstado.Clear();

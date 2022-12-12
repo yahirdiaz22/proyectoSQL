@@ -46,7 +46,7 @@ namespace proyectoSQL
             int idProveedorLibro = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string idProveedor = txtIDProveedor.Text;
             string idLibro = txtIDLibro.Text;
-            consulta = consulta = "UPDATE ProveedorLibro SET idProveedor = '" + idProveedor + idLibro + "' WHERE idProveedorLibro = " + idProveedorLibro.ToString();
+            consulta = "UPDATE ProveedorLibro  SET idProveedor = '" + idProveedor + "', idLibro = '" + idLibro + "' WHERE idProveedorLibro = " + idProveedorLibro.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

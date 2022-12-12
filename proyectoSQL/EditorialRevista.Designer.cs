@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnSalir = new System.Windows.Forms.Button();
-            this.txtIDLibro = new System.Windows.Forms.TextBox();
+            this.txtRevista = new System.Windows.Forms.TextBox();
             this.dgvActividad = new System.Windows.Forms.DataGridView();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
@@ -50,12 +50,12 @@
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // txtIDLibro
+            // txtRevista
             // 
-            this.txtIDLibro.Location = new System.Drawing.Point(313, 90);
-            this.txtIDLibro.Name = "txtIDLibro";
-            this.txtIDLibro.Size = new System.Drawing.Size(175, 22);
-            this.txtIDLibro.TabIndex = 58;
+            this.txtRevista.Location = new System.Drawing.Point(313, 90);
+            this.txtRevista.Name = "txtRevista";
+            this.txtRevista.Size = new System.Drawing.Size(175, 22);
+            this.txtRevista.TabIndex = 58;
             // 
             // dgvActividad
             // 
@@ -128,7 +128,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 585);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.txtIDLibro);
+            this.Controls.Add(this.txtRevista);
             this.Controls.Add(this.dgvActividad);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnModificar);
@@ -148,7 +148,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.TextBox txtIDLibro;
+        private System.Windows.Forms.TextBox txtRevista;
         private System.Windows.Forms.DataGridView dgvActividad;
         private System.Windows.Forms.Button btnBorrar;
         private System.Windows.Forms.Button btnModificar;

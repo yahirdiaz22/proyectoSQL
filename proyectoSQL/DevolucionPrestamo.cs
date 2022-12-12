@@ -47,7 +47,7 @@ namespace proyectoSQL
             int idDevolucionPresatmo = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string devolucion = txtIDDevolucion.Text;
             string prestamo = txtIDPRestamo.Text;
-            consulta = consulta = "UPDATE DevolucionPrestamo SET idDevolucion = '" + devolucion + "', '" + prestamo + "' WHERE idDevolucionPresatmo = " + idDevolucionPresatmo.ToString();
+            consulta = consulta = "UPDATE DevolucionPrestamo SET idDevolucion = '" + devolucion + "', idPrestamo =  '" + prestamo + "' WHERE idDevolucionPrestamo = " + idDevolucionPresatmo.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

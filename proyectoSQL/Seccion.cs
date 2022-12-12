@@ -58,7 +58,7 @@ namespace proyectoSQL
             string coleccion = txtColeccion.Text;
             string autoservicio = txtCopias.Text;
             string idBiblioteca = txtIDBiblioteca.Text;
-            consulta = consulta = "UPDATE Secciones SET lecturaConsulta = '" + lectura + "', '" + video + "','" + foto + "', '" + hemeroteca + "','" + coleccion + "', '" + autoservicio + "','" + idBiblioteca + "' WHERE idSecciones = " + idSeccion.ToString();
+            consulta = consulta = "UPDATE Secciones SET lecturaConsulta = '" + lectura + "', videoteka = '" + video + "',fonoteca = '" + foto + "', hemeroteca = '" + hemeroteca + "',coleccionLocal = '" + coleccion + "', autoServicioFotoCopias = '" + autoservicio + "',idBiblioteca = '" + idBiblioteca + "' WHERE idSecciones = " + idSeccion.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

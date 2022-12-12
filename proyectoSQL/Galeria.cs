@@ -55,7 +55,7 @@ namespace proyectoSQL
             string fechainiico = txtFechaInicio.Text;
             string fechafinal = txtFechaFinal.Text;
             string idBiblioteca = txtIDBiblioteca.Text; ;
-            consulta = consulta = "UPDATE Galeria SET nombre = '" + nombre + "', '" + artista + "','" + fechainiico + "', '" + fechafinal + "','" + idBiblioteca + "' WHERE idGaleria = " + idGaleria.ToString();
+            consulta = "UPDATE Galeria SET nombre = '" + nombre + "', nombreArtista = '" + artista + "',fechaInicio = '" + fechainiico + "', fechaFinal = '" + fechafinal + "',idBiblioteca = '" + idBiblioteca + "' WHERE idGaleria = " + idGaleria.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

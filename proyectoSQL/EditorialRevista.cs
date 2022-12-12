@@ -29,7 +29,7 @@ namespace proyectoSQL
         }
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            string idRevista = txtIDLibro.Text;
+            string idRevista = txtRevista.Text;
             string idEditorial = txtIDColeccion.Text;
             consulta = "INSERT INTO EditorialRevista (idEditorial,idRevista) " +
                 "values('" + idEditorial + "', '" + idRevista + "')";
@@ -40,22 +40,22 @@ namespace proyectoSQL
 
 
             txtIDColeccion.Clear();
-            txtIDLibro.Clear();
+            txtRevista.Clear();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             int idEditorialRevista = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string idEditorial = txtIDColeccion.Text;
-            string idLibro = txtIDLibro.Text;
-            consulta = consulta = "UPDATE idEditorialRevista SET idEditorial = '" + idEditorial + "', '" + idLibro + "' WHERE idEditorialRevista = " + idEditorialRevista.ToString();
+            string idRevista = txtRevista.Text;
+            consulta = consulta = "UPDATE EditorialRevista SET idEditorial = '" + idEditorial + "',idRevista = '" + idRevista + "' WHERE idEditorialRevista = " + idEditorialRevista.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             MostrarDatos();
             txtIDColeccion.Clear();
-            txtIDLibro.Clear();
+            txtRevista.Clear();
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

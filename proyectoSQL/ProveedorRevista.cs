@@ -42,7 +42,7 @@ namespace proyectoSQL
             int idProveedorRevista = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string idProveedor = txtIDProveedor.Text;
             string revista = txtRevista.Text;
-            consulta = consulta = "UPDATE ProveedorRevista SET idProveedor = '" + idProveedor + txtRevista + "' WHERE idProveedorRevista = " + idProveedorRevista.ToString();
+            consulta = "UPDATE ProveedorRevista  SET idProveedor = '" + idProveedor + "', idRevista = '" + revista + "' WHERE idProveedorRevista = " + idProveedorRevista.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

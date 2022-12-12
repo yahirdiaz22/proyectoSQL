@@ -78,13 +78,13 @@ namespace proyectoSQL
             string cuidad = txtCuidad.Text;
             string estado = txtEstado.Text;
             string clave = txtClave.Text;
-            string curp = txtClave.Text;
+            string curp = txtCurp.Text;
             string pais = txtPais.Text;
-            string fecha = txtPais.Text;
-            string vigencia = txtPais.Text;
+            string fecha = txtFecha.Text;
+            string vigencia = txtVigencia.Text;
             string sexo = txtSexo.Text;
             string idUsuario = txtIDUsuario.Text;
-            consulta = consulta = "UPDATE Credencial SET nombre = '" + nombre + "','" + aPaterno + "','" + aMaterno + "'+'" + calle + "','" + numero + "'+'" + cuidad + "','" + estado + "','" + pais + "','" + clave + "', '" + clave + "'," + curp + "','" + fecha + "','" + vigencia + "','" + sexo + "','" + idUsuario + "' WHERE idCredencial = " + idCredencial.ToString();
+            consulta = consulta = "UPDATE Credencial SET nombre = '" + nombre + "',apellidoPaterno = '" + aPaterno + "',apellidoMaterno = '" + aMaterno + "', calle = '" + calle + "',numeroExterior = '" + numero + "', cuidad = '" + cuidad + "',estado = '" + estado + "', pais = '" + pais + "',claveElector = '" + clave + "',CURP = '" + curp + "',fechaNacimiento = '" + fecha + "',vigencia = '" + vigencia + "',sexo ='" + sexo + "',idUsuario = '" + idUsuario + "' WHERE idCredencial = " + idCredencial.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

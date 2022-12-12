@@ -52,7 +52,7 @@ namespace proyectoSQL
             string descripcion = txtDescripcion.Text;
             string fecha = txtFecha.Text;
             string empleado = txtIDEmpleado.Text;
-            consulta = consulta = "UPDATE Inventario SET descripcion = '" + descripcion + "', '" + fecha + "','" + empleado + "' WHERE idInventario = " + idInventario.ToString();
+            consulta = consulta = "UPDATE Inventario SET descripcion = '" + descripcion + "',fecha = '" + fecha + "',idEmpleado ='" + empleado + "' WHERE idInventario = " + idInventario.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

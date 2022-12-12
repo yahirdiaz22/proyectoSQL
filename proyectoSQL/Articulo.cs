@@ -58,10 +58,10 @@ namespace proyectoSQL
             string nombre = txtNombre.Text;
             string descripcion = txtDescripcio.Text;
             string fecha = txtFecha.Text;
-            string idUsuario = txtFecha.Text;
-            string idEditorial = txtFecha.Text;
+            string idUsuario = txtidUsuario.Text;
+            string idEditorial = txtidEditorial.Text;
             int idArticulo = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
-            consulta = "  UPDATE AreaMuseo SET nombre ='" + nombre + "','" + descripcion + "','" + fecha + "','" + idUsuario + "','" + idEditorial + "WHERE idAreaMuseo = " + idArticulo.ToString();
+            consulta = "  UPDATE Articulo SET nombreArticulo ='" + nombre + "',descripcion = '" + descripcion + "',año = '" + fecha + "',idUsuario = '" + idUsuario + "',idEditorial = '" + idEditorial + "' WHERE idArticulo = " + idArticulo.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

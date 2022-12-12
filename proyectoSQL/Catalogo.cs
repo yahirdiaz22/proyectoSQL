@@ -57,7 +57,7 @@ namespace proyectoSQL
             string titulo = txtTitulo.Text;
             string referencia = txtReferencia.Text;
             string idBiblioteca = txtidBiblio.Text;
-            consulta = consulta = "UPDATE Catalogo SET nombre = '" + nombre + "', '" + materias + "', '" + titulo + "', '" + referencia + "', '" + idBiblioteca + "' WHERE idCatalogo = " + idCatalogo.ToString();
+            consulta = consulta = "UPDATE Catalogo SET autor  = '" + nombre + "', materias = '" + materias + "', titulo = '" + titulo + "', referenciaBibliografica = '" + referencia + "', idBiblioteca = '" + idBiblioteca + "' WHERE idCatalogo = " + idCatalogo.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

@@ -52,7 +52,7 @@ namespace proyectoSQL
             string fecha = txtFecha.Text;
             string descripcion = txtDesripcion.Text;
             string idBiblioteca = txtIDBiblioteca.Text;
-            consulta = consulta = "UPDATE idTaller SET nombre = '" + descripcion + idBiblioteca + "' WHERE idTaller = " + idTaller.ToString();
+            consulta = "UPDATE Taller  SET nombre = '" + nombre + "', fecha = '" + fecha + "',descripcion = '" + descripcion + "',idBiblioteca = '" + idBiblioteca + "' WHERE idTaller = " + idTaller.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

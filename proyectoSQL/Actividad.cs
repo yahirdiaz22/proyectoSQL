@@ -31,9 +31,9 @@ namespace proyectoSQL
             conexion.Close();
             MostrarDatos();
             txtNombre.Clear();
+            txtFecha.Clear();
             txtDescripcion.Clear();
-            txtidEmpleado.Clear();
-            
+            txtidEmpleado.Clear();            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -59,12 +59,13 @@ namespace proyectoSQL
             string descripcion = txtDescripcion.Text;
             string idEmpelado = txtidEmpleado.Text;
             int idActividad = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
-            consulta = "  UPDATE Actividad SET nombreActividad ='" + nombre + "','" + fecha + "','" + descripcion + "','"+idEmpelado+"'WHERE idActividad = "+idActividad.ToString();
+            consulta = "  UPDATE Actividad SET nombreActividad ='" + nombre + "',fecha ='" + fecha + "',descripcion = '" + descripcion + "',idEmpleado ='"+idEmpelado+"'WHERE idActividad = "+idActividad.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             MostrarDatos();
+            txtFecha.Clear();
             txtNombre.Clear();
             txtDescripcion.Clear();
             txtidEmpleado.Clear();

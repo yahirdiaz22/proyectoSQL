@@ -57,7 +57,7 @@ namespace proyectoSQL
             string año = txtFecha.Text;
             string pais = txtPais.Text;
             string idLibro = txtIdLibro.Text;
-            consulta = consulta = "UPDATE Traduccion SET descripcion = '" + traduccion + "', '" + descripcion + "','" + nombre + "', '" + año + "','" + pais + "', '" + idLibro + "' WHERE idTraduccion = " + idTraduccion.ToString();
+            consulta = consulta = "UPDATE Traduccion SET traduccion = '" + traduccion + "',descripcion =  '" + descripcion + "',nombre = '" + nombre + "', año = '" + año + "',pais = '" + pais + "', idLibro = '" + idLibro + "' WHERE idTraduccion = " + idTraduccion.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

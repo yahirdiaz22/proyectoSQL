@@ -59,7 +59,7 @@ namespace proyectoSQL
             string mapas = txtMapa.Text;
             string laminas = txtLamina.Text;
             string biblioteca = txtIDBiblioteca.Text;
-            consulta = consulta = "UPDATE MaterialDidactico SET globo = '" + globo + "', '" + descripcion + "','" + juegos + "','" + mapas + "','" + laminas + "','" + biblioteca + "' WHERE idMaterialDidactico = " + idMaterialDidactico.ToString();
+            consulta = consulta = "UPDATE MaterialDidactico SET globoTerraqueo = '" + globo + "', descripcion = '" + descripcion + "',juegosDidacticos = '" + juegos + "',mapas = '" + mapas + "',laminas = '" + laminas + "',idBiblioteca = '" + biblioteca + "' WHERE idMaterialDidactico = " + idMaterialDidactico.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

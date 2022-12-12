@@ -44,10 +44,10 @@ namespace proyectoSQL
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            int idMulta = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
+            int idPasta = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string color = txtColor.Text;
             string pasta = txtTipo.Text;
-            consulta = consulta = "UPDATE Multa SET color = '" + color + pasta + "' WHERE idMulta = " + idMulta.ToString();
+            consulta = consulta = "UPDATE Pasta  SET color = '" + color + "', tipoPasta = '" + pasta + "' WHERE idPasta = " + idPasta.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

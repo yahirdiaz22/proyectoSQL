@@ -56,12 +56,17 @@ namespace proyectoSQL
             string proyeccion = txtProyeccion.Text;
             string seccion = txtSeccion.Text;
             string idBiblioteca = txtidBiblio.Text;
-            consulta = consulta = "UPDATE DimensionLudica SET representacion = '" + representacion + "', '" + debate + "', '" + proyeccion + "', '" + seccion + "', '" + idBiblioteca + "' WHERE idDimensionLudica = " + idDimensionLudica.ToString();
+            consulta = consulta = "UPDATE DimensionLudica SET representacion = '" + representacion + "', debates = '" + debate + "', proyeccionPeliculasDocumentos = '" + proyeccion + "', seccionJuegoMesa ='" + seccion + "', idBiblioteca ='" + idBiblioteca + "' WHERE idDimensionLudica = " + idDimensionLudica.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             MostrarDatos();
+            txtRepresentacion.Clear();
+            txtDebate.Clear();
+            txtProyeccion.Clear();
+            txtSeccion.Clear();
+            txtidBiblio.Clear();
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)

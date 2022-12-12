@@ -48,7 +48,7 @@ namespace proyectoSQL
             string descripcion = txtDescripcion.Text;
             string numero = txtNumero.Text;
 
-            consulta = consulta = "UPDATE Coleccion SET descripcion = '" + descripcion + "', '" + numero +  "' WHERE idColeccion = " + idColeccion.ToString();
+            consulta = consulta = "UPDATE Coleccion SET descripcion = '" + descripcion + "', numeroColeccion ='" + numero +  "' WHERE idColeccion = " + idColeccion.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

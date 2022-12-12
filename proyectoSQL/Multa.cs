@@ -49,7 +49,7 @@ namespace proyectoSQL
             string descripcion = txtDescripcion.Text;
             string precio = txtPrecio.Text;
             string usuario = txtIDUsuario.Text;
-            consulta = consulta = "UPDATE Multa SET descripcion = '" + descripcion + "', '" + precio + "','" + usuario + "' WHERE idMulta = " + idMulta.ToString();
+            consulta = consulta = "UPDATE Multa SET descripcion = '" + descripcion + "', precio = '" + precio + "',idUsuario = '" + usuario + "' WHERE idMulta = " + idMulta.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

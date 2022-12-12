@@ -26,7 +26,7 @@ namespace proyectoSQL
             string volantes = txtVolantes.Text;
             string avisos = txtAvisos.Text;
             string idBiblioteca = txtidbiblio.Text;
-            consulta = "INSERT INTO Archivero (folletos,recortes,ilustracions,volantes,avisos,idBiblioteca) values ('" + folletos + "','" + recortes + "','" + ilustraciones + "','" + volantes + "','" + avisos + "','" + idBiblioteca + "')";
+            consulta = "INSERT INTO Archivero (folletos,recortes,ilustraciones,volantes,avisos,idBiblioteca) values ('" + folletos + "','" + recortes + "','" + ilustraciones + "','" + volantes + "','" + avisos + "','" + idBiblioteca + "')";
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
@@ -59,7 +59,7 @@ namespace proyectoSQL
             string avisos = txtAvisos.Text;
             string idBiblioteca = txtidbiblio.Text;
             int idArchivero = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
-            consulta = "  UPDATE Archivero SET folletos ='" + folletos + "','" + recortes + "','" + ilustraciones + "','" + volantes + "','" + avisos + "','" + idBiblioteca + "' WHERE idArchivero = " + idArchivero.ToString();
+            consulta = "  UPDATE Archivero SET folletos ='" + folletos + "', recortes ='" + recortes + "',ilustraciones ='" + ilustraciones + "',volantes ='" + volantes + "',avisos ='" + avisos + "',idBiblioteca ='" + idBiblioteca + "' WHERE idArchivero = " + idArchivero.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
