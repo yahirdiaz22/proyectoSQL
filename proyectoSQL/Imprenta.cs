@@ -54,7 +54,7 @@ namespace proyectoSQL
             string descripcion = txtDescripcion.Text;
             string cantidad = txtCantidad.Text;
             string editorial = txtEditorial.Text;
-            consulta = consulta = "UPDATE Imprenta SET nombre = '" + nombre + "', numeroImprenta = '" + numero + "',descripcion = '" + descripcion + "', cantidadTotal = '" + cantidad + "',idEditorial = '" + editorial + "' WHERE idImprenta = " + idImprenta.ToString();
+            consulta = "UPDATE Imprenta SET nombre = '" + nombre + "', numeroImprenta = '" + numero + "',descripcion = '" + descripcion + "', cantidadTotal = '" + cantidad + "',idEditorial = '" + editorial + "' WHERE idImprenta = " + idImprenta.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

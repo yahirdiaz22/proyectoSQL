@@ -49,7 +49,7 @@ namespace proyectoSQL
             string sillas = txtSillas.Text;
             string mesas = txtCantidad.Text;
             string boveda = txtIDBiblioteca.Text;
-            consulta = consulta = "UPDATE Mobiliario SET sillas ='" + sillas + "', mesas = '" + mesas + "',idBoveda = '" + boveda + "' WHERE idMobiliario = " + idMobiliario.ToString();
+            consulta = "UPDATE Mobiliario SET sillas ='" + sillas + "', mesas = '" + mesas + "',idBoveda = '" + boveda + "' WHERE idMobiliario = " + idMobiliario.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

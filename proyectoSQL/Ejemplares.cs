@@ -51,8 +51,7 @@ namespace proyectoSQL
             int idEjemplares = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string Total = txtEjemplare.Text;
             string descripcion = txtDescripcion.Text;
-
-            consulta = consulta = "UPDATE Ejemplares SET totalEjemplares = '" + Total + "', descripcion = '" + descripcion + "' WHERE idEjemplares = " + idEjemplares.ToString();
+            consulta = "UPDATE Ejemplares SET totalEjemplares = '" + Total + "', descripcion = '" + descripcion + "' WHERE idEjemplares = " + idEjemplares.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

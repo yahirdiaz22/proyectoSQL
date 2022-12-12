@@ -48,7 +48,7 @@ namespace proyectoSQL
             int idEditorialRevista = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string idEditorial = txtIDColeccion.Text;
             string idRevista = txtRevista.Text;
-            consulta = consulta = "UPDATE EditorialRevista SET idEditorial = '" + idEditorial + "',idRevista = '" + idRevista + "' WHERE idEditorialRevista = " + idEditorialRevista.ToString();
+           consulta = "UPDATE EditorialRevista SET idEditorial = '" + idEditorial + "',idRevista = '" + idRevista + "' WHERE idEditorialRevista = " + idEditorialRevista.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

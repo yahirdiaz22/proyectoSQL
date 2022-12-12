@@ -59,7 +59,7 @@ namespace proyectoSQL
             string descripcion = txtDescripcion.Text;
             string fecha = txtfecg.Text;
             string idLibro = txtLibro.Text;
-            consulta = consulta = "UPDATE Copias SET numCopias = '" + numero + "', descripcion = '" + descripcion + "', fecha = '" + fecha + "', idLibro = '" + idLibro + "' WHERE idCopias = " + idCopias.ToString();
+             consulta = "UPDATE Copias SET numCopias = '" + numero + "', descripcion = '" + descripcion + "', fecha = '" + fecha + "', idLibro = '" + idLibro + "' WHERE idCopias = " + idCopias.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

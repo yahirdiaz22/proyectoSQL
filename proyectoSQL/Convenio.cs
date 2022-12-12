@@ -53,7 +53,7 @@ namespace proyectoSQL
             string fechainicio = txtFechaInicio.Text;
             string fechafinal = txtFechaFinal.Text;
             string idBiblioteca = txtIDBiblio.Text;
-            consulta = consulta = "UPDATE Convenio SET descripcion = '" + descripcion + "',fechaInicio =  '" + fechainicio + "', fechaFinal =  '" + fechafinal + "', idBiblioteca = '" + idBiblioteca + "' WHERE idConvenio = " + idConvenio.ToString();
+            consulta = "UPDATE Convenio SET descripcion = '" + descripcion + "',fechaInicio =  '" + fechainicio + "', fechaFinal =  '" + fechafinal + "', idBiblioteca = '" + idBiblioteca + "' WHERE idConvenio = " + idConvenio.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

@@ -73,7 +73,7 @@ namespace proyectoSQL
             string pais = txtPais.Text;
             string telefono = txtTelefono.Text;
             string biblioteca = txtIDBIblitoeca.Text;
-            consulta = consulta = "UPDATE Empleado SET nombre = '" + nombre + "',apellidoPaterno = '" + aPaterno + "',apellidoMaterno = '" + aMaterno + "',rfc = '" + rfc + "',calle = '" + calle + "', numero = '" + numero + "', cuidad = '" + cuidad + "', estado = '" + estado + "',pais = '" + pais + "',telefono = '" + telefono + "', idBiblioteca = '" + biblioteca + "' WHERE idEmpeldao = " + idEmpeldao.ToString();
+            consulta = "UPDATE Empleado SET nombre = '" + nombre + "',apellidoPaterno = '" + aPaterno + "',apellidoMaterno = '" + aMaterno + "',rfc = '" + rfc + "',calle = '" + calle + "', numero = '" + numero + "', cuidad = '" + cuidad + "', estado = '" + estado + "',pais = '" + pais + "',telefono = '" + telefono + "', idBiblioteca = '" + biblioteca + "' WHERE idEmpeldao = " + idEmpeldao.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

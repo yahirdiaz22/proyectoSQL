@@ -49,7 +49,7 @@ namespace proyectoSQL
             string fecha = txtPrestamo.Text;
             string fechaEntrega = txtFechaEntrega.Text;
             string credencial = txtIDCredencial.Text;
-            consulta = consulta = "UPDATE Prestamo SET fecha = '" + fecha + "', fecheEntrega = '" + fechaEntrega + "',idCredencial = '" + credencial + "' WHERE idPrestamo = " + idPrestamo.ToString();
+            consulta = "UPDATE Prestamo SET fecha = '" + fecha + "', fecheEntrega = '" + fechaEntrega + "',idCredencial = '" + credencial + "' WHERE idPrestamo = " + idPrestamo.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

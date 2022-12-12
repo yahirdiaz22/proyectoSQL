@@ -57,7 +57,7 @@ namespace proyectoSQL
             string editorial = txtEditorial.Text;
             string numeroPagina = txtNumero.Text;
             string pais = txtPais.Text;
-            consulta = consulta = "UPDATE Revista SET nombre = '" + nombre + "', editorial  =  '" + editorial + "',numeroPagina = '" + numeroPagina + "',pais =  '" + pais + "' WHERE idRevista = " + idRevista.ToString();
+            consulta = "UPDATE Revista SET nombre = '" + nombre + "', editorial  =  '" + editorial + "',numeroPagina = '" + numeroPagina + "',pais =  '" + pais + "' WHERE idRevista = " + idRevista.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();

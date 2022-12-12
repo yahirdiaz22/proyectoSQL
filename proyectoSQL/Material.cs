@@ -47,7 +47,7 @@ namespace proyectoSQL
             int idMaterial = (int)dgvActividad.SelectedRows[0].Cells[0].Value;
             string tipoMaterial = txtMaterial.Text;
             string Cantidad = txtCantidad.Text;
-            consulta = consulta = "UPDATE Material  SET tipoMaterial = '" + tipoMaterial + "', cantidadMaterial = '" + Cantidad + "' WHERE idMaterial = " + idMaterial.ToString();
+            consulta = "UPDATE Material  SET tipoMaterial = '" + tipoMaterial + "', cantidadMaterial = '" + Cantidad + "' WHERE idMaterial = " + idMaterial.ToString();
             conexion.Open();
             comando = new SqlCommand(consulta, conexion);
             comando.ExecuteNonQuery();
